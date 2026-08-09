@@ -1,0 +1,10 @@
+venv/
+backend/shreesales/venv/
+node_modules/
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+.env.local
+build/
+dist/

@@ -1,0 +1,59 @@
+/* Feedback Page */
+.feedback-page {
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #f5f6fa, #eef0f8);
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 20px;
+}
+.feedback-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 44px 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 16px 60px rgba(26,35,126,0.12);
+  border: 1px solid #e0e4f0;
+}
+.feedback-header { text-align: center; margin-bottom: 28px; }
+.feedback-emoji { font-size: 3.5rem; margin-bottom: 10px; }
+.feedback-header h2 { font-size: 1.6rem; color: #1a237e; margin-bottom: 6px; }
+.feedback-header p { color: #6b7280; font-size: 0.9rem; }
+
+.stars-section { margin-bottom: 20px; text-align: center; }
+.stars-section label { display: block; font-size: 0.92rem; font-weight: 600; color: #1a237e; margin-bottom: 12px; }
+.star-input { display: flex; justify-content: center; gap: 8px; margin-bottom: 8px; }
+.star-icon {
+  font-size: 2.5rem; cursor: pointer;
+  color: #d1d5db; transition: 0.2s;
+  user-select: none;
+}
+.star-icon.filled { color: #f9a825; transform: scale(1.1); }
+.star-label { font-size: 0.9rem; font-weight: 600; color: #6b7280; min-height: 22px; }
+
+.message-section { margin-bottom: 20px; }
+.message-section label {
+  display: block; font-size: 0.9rem; font-weight: 600;
+  color: #1a237e; margin-bottom: 8px;
+}
+.message-section label span { color: #6b7280; font-weight: 400; font-size: 0.82rem; }
+.message-section textarea {
+  width: 100%; padding: 12px 14px;
+  border: 2px solid #e0e4f0; border-radius: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 0.9rem;
+  resize: vertical; transition: 0.25s; background: #fafbff;
+}
+.message-section textarea:focus { outline: none; border-color: #1a237e; }
+
+.submit-feedback-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #1a237e, #283593);
+  color: #fff; border: none; padding: 14px;
+  border-radius: 10px; font-size: 1rem; font-weight: 700;
+  cursor: pointer; transition: 0.28s; font-family: 'Poppins', sans-serif;
+}
+.submit-feedback-btn:hover {
+  background: linear-gradient(135deg, #f9a825, #ffd54f);
+  color: #1a237e; transform: translateY(-2px);
+}
+.alert-box { padding: 12px 14px; border-radius: 8px; font-size: 0.88rem; margin-bottom: 12px; }
+.alert-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
